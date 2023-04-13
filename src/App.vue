@@ -1,8 +1,4 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
@@ -13,18 +9,19 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: radial-gradient(
+                  circle at 60% 90%,
+                  rgba(46, 103, 161, 1),
+                  transparent 60%
+  ),
+  radial-gradient(
+                  circle at 20px 20px,
+                  rgba(46, 103, 161, 0.8),
+                  transparent 25%
+  ),
+  #182336;
+  height: 900px;
+  padding: 50px;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

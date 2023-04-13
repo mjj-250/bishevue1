@@ -14,7 +14,7 @@
         <el-menu-item index="/Home">
             <div class="demo-fit">
                 <div class="block">
-                     <el-avatar shape="square" :size="50" :src="src" />
+                    <el-avatar shape="square" :size="50" :src="src" />
                 </div>
             </div>
         </el-menu-item>
@@ -25,26 +25,27 @@
         <el-menu-item index="/Lab">社团管理</el-menu-item>
         <el-menu-item index="/Person">个人信息</el-menu-item>
     </el-menu>
+    PersonView
 </template>
 
 <script>
-import src from "@/assets/logo.png" /*图片引用*/
+    import src from "@/assets/logo.png";
 
-export default {
-    name: "HomeView",
-    data(){
-        return{
-            activeIndex:'/Home',
-            src:src
-        }
-    },
-    methods:{
-        handleSelect(key,keypath){
-            console.log(key)
-            console.log(keypath)
+    export default {
+        name: "PersonView",
+        data(){
+            return{
+                activeIndex:'/Person',
+                src:src
+            }
+        },
+        methods:{
+            handleSelect(key,keypath){
+                console.log(key)
+                console.log(keypath)
+            }
         }
     }
-}
 </script>
 
 <style scoped>
